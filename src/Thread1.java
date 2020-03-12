@@ -9,10 +9,9 @@ public class Thread1 extends MyThread implements Runnable  {
      */
     @Override
     public void run() {
-        for (int i = 0; i< )
-        for (String[] data : this.db.) {
-            for (String val : data) {
-                this.setResult(val+", ");
+        for (int i = 0; i< this.db.getRows(); i++) {
+            for (int j = 0; j <this.db.getCols(); j++) {
+                this.setResult(this.db.getValue(i,j)+", ");
             }
             this.setResult("\n");
         }

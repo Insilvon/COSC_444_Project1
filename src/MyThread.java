@@ -1,17 +1,17 @@
 public class MyThread {
     public Database db;
-    private String result;
+    private StringBuilder result = new StringBuilder("");
 
     public MyThread(Database db) {
         this.db = db;
     }
 
     public void setResult(String result){
-        this.result = result;
+        this.result.append(result);
     }
 
     public String getResult() {
-        return this.result;
+        return this.result.toString();
     }
 }
 
