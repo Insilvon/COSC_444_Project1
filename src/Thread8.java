@@ -7,6 +7,10 @@ public class Thread8 extends MyThread implements Runnable {
     private int maxWriting = -1;
     private int minWriting = 1000;
 
+    /**
+     * Constructor Method
+     * @param db
+     */
     public Thread8(Database db) {
         super(db,"Calculate the highest/lowest score overall from all three categories");
     }

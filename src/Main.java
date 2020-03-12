@@ -1,3 +1,7 @@
+/**
+ * Colin Crowe - COSC 444
+ * 8 Threads read SAT database and print different data
+ */
 public class Main {
     public static void main(String[] args) {
         Database db = new Database();

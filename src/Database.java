@@ -3,6 +3,10 @@ import java.io.FileNotFoundException;
 import java.util.ArrayList;
 import java.util.Scanner;
 
+/**
+ * Database object. Loads the local CSV file into a 2-D Array in memory, allowing for deadlock possibilities as
+ * threads attempt to read the same locations and modify data
+ */
 public class Database {
 
     private String[][] database = new String[460][4];
