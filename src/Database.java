@@ -43,7 +43,7 @@ public class Database {
             fixed[i] = small[i];
         }
         for (int i = small.length; i<6; i++) {
-            fixed[i] = "null";
+            fixed[i] = "0";
         }
         return fixed;
     }

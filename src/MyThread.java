@@ -1,9 +1,11 @@
 public class MyThread {
     public Database db;
     private StringBuilder result = new StringBuilder("");
+    private String threadPurpose = "";
 
-    public MyThread(Database db) {
+    public MyThread(Database db, String purpose) {
         this.db = db;
+        this.threadPurpose = purpose;
     }
 
     public void setResult(String result){
@@ -11,7 +13,7 @@ public class MyThread {
     }
 
     public String getResult() {
-        return this.result.toString();
+        return new StringBuilder(this.threadPurpose).append("\n"+this.result).toString();
     }
 }
 
